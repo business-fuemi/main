@@ -222,6 +222,49 @@
     margin-bottom: 3rem;
   }
 
+  /* NEWS & UPDATE */
+  .news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 640px;
+  }
+
+  .news-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .news-bullet {
+    color: var(--accent);
+    font-size: 13px;
+    line-height: 1.6;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .news-text {
+    font-size: 14.5px;
+    color: var(--ink-muted);
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  .news-tag-alert {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #b3403a;
+    font-weight: 600;
+    border: 1px solid #f0d4d2;
+    background: #fbe9e8;
+    padding: 4px 12px;
+    border-radius: 100px;
+    margin-bottom: 0.5rem;
+  }
+
   /* STATUS PILL */
   .status-pill {
     display: inline-flex;
@@ -752,7 +795,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">commissions ✦</a>
+  <a href="#" class="nav-logo">fuemi ✦</a>
   <ul class="nav-links">
     <!--<li><a href="https://business-fuemi.github.io/jp/" aria-label="View Japanese version">日本語</a></li>-->
     <li><a href="#pricing">pricing</a></li>
@@ -777,6 +820,28 @@
 
 <hr class="divider">
 
+<!-- NEWS & UPDATE -->
+<section id="news">
+  <div class="section-label">✦ news & update</div>
+  <h2 class="section-title">what's new</h2>
+
+  <div class="news-list">
+    <div class="news-item">
+      <span class="news-bullet">◦</span>
+      <div class="news-text">
+        <span class="news-tag-alert">⚠ japanese site under construction</span><br>
+        日本語版サイトは現在準備中です。<br>
+        The Japanese version of this website is currently under construction.
+      </div>
+    </div>
+    <div class="news-item">
+      <span class="news-bullet">◦</span>
+      <div class="news-text">Project slots are now open for the months of July to August.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
 <!-- PRICING -->
 <section id="pricing">
   <div class="section-label">✦ pricing</div>
